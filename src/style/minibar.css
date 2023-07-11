@@ -1,0 +1,62 @@
+
+.textDiv {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    left: 50%;
+    gap: 30px;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .textLabel {
+    color: #e3e3e3;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-family: Arial, sans-serif;
+  }
+
+  .textSelected {
+    color: #e3e3e3;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-family: Arial, sans-serif;
+    padding-bottom: 2px; /* Adjust the padding value as needed */
+    border-bottom: 2px solid #e3e3e3; /* Adjust the border thickness and color as needed */
+  }
+  
+  .textSelected:hover, .textLabel:hover{
+    transform: translateY(4px);
+    text-decoration: none;
+  }
+
+  .plain-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    /* Add any other custom styles as needed */
+  }
+  
+  @media (max-width: 900px) {
+    .textDiv {
+        gap: 25px;
+    }
+  
+    .textLabel {
+      font-size: 10px;
+    }
+  
+    .textSelected {
+      font-size: 10px;
+    }
+  }
