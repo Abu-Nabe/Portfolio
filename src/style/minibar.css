@@ -1,6 +1,6 @@
 
 .textDiv {
-    position: absolute;
+    position: fixed;
     margin: auto;
     display: flex;
     left: 50%;
