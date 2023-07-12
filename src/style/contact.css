@@ -1,0 +1,70 @@
+/** @format */
+
+.contactBackgroundImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.contactCenterDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.contactDiv {
+  display: flex;
+  align-items: center;  
+  width: 250px;
+  margin-bottom: 5px;
+}
+
+.contactName {
+  margin-left: 10px; /* Adjust the spacing between text and image */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+  color: 	white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 2); 
+  text-align: center;
+}
+
+.contactImg {
+  width: 35px; /* Adjust the width of the image */
+  height: 35px; /* Adjust the height of the image */
+  cursor: pointer;
+}
+
+.contactName:hover {
+  color: #bbb;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  a p {
+    text-decoration: none;
+  }
+
+  .contactDiv {
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fade-in2 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in2 {
+    from {
+        opacity: 0;
+        transform: translateX(-40px); /* Start with translation from left */
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0); /* End with no translation */
+      }
+  }
+  

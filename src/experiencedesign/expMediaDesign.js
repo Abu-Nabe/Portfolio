@@ -31,15 +31,14 @@ import {
   collegeExp,
 } from "./../extension/portfolioImgs";
 
-export const ExpDesign = () => {
+export const ExpMediaDesign = () => {
   return (
     <div>
       <div className="experienceDiv">
-
-        <div className="experienceContainer">
-          <div className="experienceRightDiv">
-            <img className="experienceImg" src={socirankExp} alt="Image" />
-            <div className="experienceIconDiv">
+      <div className="experienceContainer">
+          <p className="experienceTitle">SociRank</p>
+          <img className="experienceImg" src={socirankExp} alt="Image" />
+          <div className="experienceIconDiv">
               <a href="https://socirank.com" target="_blank">
                 <img className="icon" src={socirankIcon} alt="LinkedIn" />
               </a>
@@ -53,32 +52,21 @@ export const ExpDesign = () => {
                 <img className="icon" src={appleIcon} alt="Image" />
               </a>
             </div>
-          </div>
-
-          <div className="experienceLeftDiv">
-            <p className="experienceTitle">SociRank</p>
             <p className="experienceText">{socirankText}</p>
-          </div>
         </div>
-
         <div className="experienceContainer">
-          <div className="experienceLeftDiv">
             <p className="experienceTitle">Personal Bank</p>
-            <p className="experienceText">{bankText}</p>
-          </div>
-          <div className="experienceRightDiv">
-            <img className="experienceImg2" src={bankExp} alt="Image" />
-
+            <img className="experienceImg" src={bankExp} alt="Image" />
             <div className="experienceIconDiv">
               <a href="https://github.com/shadowfsdev/banking" target="_blank">
                 <img className="icon" src={githubIcon2} alt="Image" />
               </a>
             </div>
-          </div>
+            <p className="experienceText">{bankText}</p>
         </div>
 
         <div className="experienceContainer">
-          <div className="experienceRightDiv">
+        <p className="experienceTitle">Food Scanner</p>
             <img className="experienceImg" src={foodExp} alt="Image" />
             <div className="experienceIconDiv">
               <a href="https://www.youtube.com/watch?v=gALBM_urZr4" target="_blank">
@@ -88,21 +76,13 @@ export const ExpDesign = () => {
                 <img className="icon" src={githubIcon2} alt="Image" />
               </a>
             </div>
-          </div>
-
-          <div className="experienceLeftDiv">
-            <p className="experienceTitle">Food Scanner</p>
             <p className="experienceText">{foodText}</p>
-          </div>
         </div>
 
         <div className="experienceContainer">
-          <div className="experienceLeftDiv">
             <p className="experienceTitle">HobbyStar</p>
-            <p className="experienceText">{hobbystarText}</p>
-          </div>
-          <div className="experienceRightDiv">
-            <img className="experienceImg2" src={hobbystarExp} alt="Image" />
+           
+            <img className="experienceImg" src={hobbystarExp} alt="Image" />
 
             <div className="experienceIconDiv">
               <a href="https://www.youtube.com/shorts/cgjstc8pins" target="_blank">
@@ -112,12 +92,15 @@ export const ExpDesign = () => {
                 <img className="icon" src={githubIcon2} alt="Image" />
               </a>
             </div>
-          </div>
+
+            <p className="experienceText">{hobbystarText}</p>
         </div>
 
         <div className="experienceContainer">
-          <div className="experienceRightDiv">
+            <p className="experienceTitle">SociRank Website</p>
+
             <img className="experienceImg" src={socirankWebExp} alt="Image" />
+
             <div className="experienceIconDiv">
               <a href="https://socirank.com" target="_blank">
                 <img className="icon" src={socirankIcon} alt="LinkedIn" />
@@ -128,21 +111,14 @@ export const ExpDesign = () => {
                 <img className="icon" src={youtubeIcon} alt="Image" />
               </a>
             </div>
-          </div>
 
-          <div className="experienceLeftDiv">
-            <p className="experienceTitle">SociRank Website</p>
             <p className="experienceText">{socirankWebText}</p>
-          </div>
         </div>
 
         <div className="experienceContainer">
-          <div className="experienceLeftDiv">
             <p className="experienceTitle">Frontend Tutoring</p>
-            <p className="experienceText">{tutorText}</p>
-          </div>
-          <div className="experienceRightDiv">
-            <img className="experienceImg2" src={tutoringExp} alt="Image" />
+      
+            <img className="experienceImg" src={tutoringExp} alt="Image" />
 
             <div className="experienceIconDiv">
               <a
@@ -150,26 +126,23 @@ export const ExpDesign = () => {
                 <img className="icon" src={githubIcon2} alt="Image" />
               </a>
             </div>
-          </div>
+
+            <p className="experienceText">{tutorText}</p>
+
         </div>
         <div className="experienceContainer">
-          <div className="experienceRightDiv">
+             <p className="experienceTitle">College App</p>
             <img className="experienceImg" src={collegeExp} alt="Image" />
             <div className="experienceIconDiv">
               <a href="https://github.com/shadowfsdev/mybvp" target="_blank">
                 <img className="icon" src={githubIcon2} alt="Image" />
               </a>
             </div>
-          </div>
-
-          <div className="experienceLeftDiv">
-            <p className="experienceTitle">College App</p>
             <p className="experienceText">{collegeText}</p>
-          </div>
-        </div>
+        </div> 
       </div>
     </div>
   );
 };
 
-export default ExpDesign;
+export default ExpMediaDesign;

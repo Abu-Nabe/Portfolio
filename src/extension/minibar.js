@@ -28,8 +28,16 @@ export const Minibar = ({ selected, normal }) => {
         <Link className="plain-link" to={"/experience"}>
             Professional experience
         </Link></p>
-        <p className={checkSelected(3)}>Skills</p>
-        <p className={checkSelected(4)}>Contact me</p>
+        <p className={checkSelected(3)}>
+          <Link className="plain-link" to={"/skills"}>
+            Skills
+          </Link>
+        </p>
+        <p className={checkSelected(4)}>
+          <Link className="plain-link" to={"/contact"}>
+            Contact me
+          </Link>
+        </p>
       </div>
     </div>
   );
