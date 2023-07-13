@@ -1,29 +1,26 @@
-/** @format */
-
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 import { Minibar } from "./../extension/minibar";
-import { ExpDesign } from "./../experiencedesign/expDesign";
-import { ExpMediaDesign } from "./../experiencedesign/expMediaDesign";
-import backgroundImg from "./../img/4.png";
-
+import { MainSkill } from "./../skillsDesign/mainSkill";
+import { MainMediaSkill } from "./../skillsDesign/mainMediaSkill";
+import backgroundImg from "./../img/5.png";
 import "./../style/skills.css";
 
-function Experience() {
+function Skills() {
+  const isMedia = window.matchMedia('(max-width: 900px)').matches;
   useEffect(() => {
-    document.title = "Languages & Frameworks - Software Developer"; // Change the title here
+    document.title = "Languages & Frameworks - Software Engineer";
   }, []);
 
   return (
     <div className="Experience">
       <div className="mainDiv">
-        <img className="expBackgroundImg" src={backgroundImg} alt="Image" />
+        <img className="skillsBackgroundImg" src={backgroundImg} alt="Image" />
         <Minibar selected={3} normal="textLabel" />
-        
+          {isMedia ? <MainMediaSkill /> : <MainSkill />}
       </div>
     </div>
   );
 }
 
-export default Experience;
+export default Skills;

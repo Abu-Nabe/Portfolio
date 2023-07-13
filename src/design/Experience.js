@@ -13,7 +13,7 @@ import "./../style/experience.css";
 function Experience() {
   const isMedia = window.matchMedia('(max-width: 900px)').matches;
   useEffect(() => {
-    document.title = "Experience - Software Developer"; // Change the title here
+    document.title = "Experience - Software Engineer"; // Change the title here
   }, []);
 
   return (

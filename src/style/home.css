@@ -34,6 +34,7 @@
     font-size: 44px;
     font-weight: bold;
     font-family: monospace, sans-serif;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   }
 
   .middleText{
@@ -41,12 +42,12 @@
     font-size: 18px;
     font-weight: 500;
     font-family: Arial, sans-serif;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 2); 
     text-align: center;
     margin-top: 30px;
     margin-left: 10%;
     margin-right: 10%;
     border: 1px solid whitesmoke;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     border-radius: 16px;
     padding: 15px;
   }

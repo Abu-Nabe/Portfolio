@@ -10,7 +10,7 @@ import backgroundImg from './../img/7.png'
 
 function Home() {
   useEffect(() => {
-    document.title = 'Software Developer'; // Change the title here
+    document.title = 'Software Engineer'; // Change the title here
   }, []);
   
   return (
@@ -20,7 +20,7 @@ function Home() {
         <Minibar selected={1} normal="textLabel"/>
           <div className="middleDiv">
             <p className="middleTop">Abu Nabé</p>
-            <p className="middleHeader">Software Developer</p>
+            <p className="middleHeader">Software Engineer</p>
             <p className="middleText">{aboutText}</p>
 
             <div className="iconDiv">

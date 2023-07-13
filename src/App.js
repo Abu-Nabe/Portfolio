@@ -8,6 +8,10 @@ import Experience from './design/Experience';
 import Skills from './design/Skills';
 import Contact from './design/Contact';
 
+import PreloadImages from "./extension/preloadImages";
+import ExperiencePreloader from './extension/portfolioPreloader';
+import SkillsPreloader from './extension/skillsPreloader';
+
 import Error from './design/Error';
 
 function App() {

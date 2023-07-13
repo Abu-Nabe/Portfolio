@@ -13,7 +13,7 @@ import { linkedinIcon, githubIcon, socirankIcon, facebookIcon, gmailIcon, whatsa
 
 function Contact() {
   useEffect(() => {
-    document.title = "Contact me - Software Developer"; // Change the title here
+    document.title = "Contact me - Software Engineer"; // Change the title here
   }, []);
 
   return (
@@ -44,13 +44,13 @@ function Contact() {
           <a href="https://www.facebook.com/abumancityabu/" target="_blank">
             <div class="contactDiv">
               <img src={facebookIcon} alt="Image" class="contactImg"></img>
-              <p class="contactName">Abu's Facebook - not active</p>
+              <p class="contactName">Abu's Facebook - inactive</p>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/mohamed-abu-bacar-nabe-002371204/" target="_blank">
             <div class="contactDiv">
               <img src={linkedinIcon} alt="Image" class="contactImg"></img>
-              <p class="contactName">Abu's LinkedIn - not active</p>
+              <p class="contactName">Abu's LinkedIn - inactive</p>
             </div>
           </a>
         </div>
